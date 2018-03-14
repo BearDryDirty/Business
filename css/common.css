@@ -1,0 +1,40 @@
+body{font-size: .7rem; background: #fff}
+a,button,input,textarea,select{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
+select,input{background-color:transparent; border-color:transparent;}
+.page{background: #fff}
+.box{padding: 0.5rem}
+.w-pic{width: 100%}
+.bg-blue{background: #2a82e4}
+.hidden{overflow: hidden;}
+.bar-nav .earth{width: 30px}
+.bar-nav .button-primary{background: none}
+.bar-nav .top-sel{position: absolute; top: 0; font-size: .7rem;height: 100%}
+.bar-nav input{text-indent: 2.1rem}
+.bar-tab span img{height: 22px}
+.bar-tab span{color: #fff}
+.bar-tab .active{background: #2a9ae4}
+.swiper-container img{width: 100%}
+.swiper-container{padding-bottom: 0}
+.ind-wen{padding: .5rem; font-size: .7rem; color: #fff}
+.ind-nav a {margin-bottom: 2%}
+.ind-nav a img{width: 32px; vertical-align: middle; margin-bottom: 2%}
+.ind-nav a span{width: 100%; text-align: center; display: inline-block;}
+#city-picker{background: none; color: #fff; border: none; float: right; margin-right: 4%; display: inline-block; height: 20px}
+#city-picker::-webkit-input-placeholder{color: #fff}
+.ind-select{line-height: 20px; overflow: hidden; color: #fff}
+.ind-way{border-top: 1px solid #fff}
+.ind-way select{color: #fff; text-align: center;}
+.ind-way select option{text-align: center;}
+.ind-list{margin-bottom: .5rem}
+.list-block i{font-style: normal; padding: 1px 3px}
+.icon-1{color: #fff; font-size: .4rem; background: #43cf7c}
+.icon-2{color: #fff; font-size: .4rem; background: #2b81e4}
+.icon-3{color: #fff; font-size: .4rem; background: #d43131}
+.icon-4{color: #fff; font-size: .4rem; background: #fe5734}
+.icon-q{color: #d73736; font-size: .4rem; border:1px solid #d73736; border-radius: 20px; margin-right: 5px; display: inline}
+.list-block .item-subtitle{color: #999; font-size: .5rem; margin-top: 5px}
+.list-block .item-title{color: #000;font-size: .7rem}
+.list-block .item-content{padding-left: 0}
+.list-block{margin: .3rem}
+.bar .searchbar{display: inline-block; width: 90%}
+.list-block.media-list .item-inner{padding-right: 0}

@@ -1,33 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<title>无标题文档</title>
-	<link href="assets/css/common.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/amazeui.touch.css" rel="stylesheet" type="text/css"> </head>
+    <link rel="stylesheet" href="css/sm.css">
+	<link rel="stylesheet" href="css/sm-extend.min.css">
+    <link rel="stylesheet" href="css/common.css">
 
-<body>
+  </head>
+  <body>
+    <div class="page-group">
+		<div class="page">
+
+		  <header class="bar bar-nav bg-blue">
+		    <a class="button button-link button-nav pull-left" href="" data-transition='slide-out'>
+		      <span class="icon earth"><img src="images/earth.png" class="w-pic"/></span>
+		    </a>
+			<form class="" action="" method="post">
+				<div class="searchbar row">
+				  <div class="search-input col-80">
+		              <select class="top-sel">
+		                <option>供应</option>
+		                <option>需求</option>
+		              </select>
+					  <input type="search" id='search' placeholder='请输入信息名称'/>
+				  </div>
+				  <button type="button" name="button" class="button button-fill button-primary col-20">搜索</button>
+				</div>
+			</form>
+		  </header>
+
+		  <nav class="bar bar-tab bg-blue">
+		    <a class="tab-item active" href="#">
+		      <span class="icon"><img src="images/icon1.png"/></span>
+		      <span class="tab-label">首页</span>
+		    </a>
+		    <a class="tab-item" href="#">
+		      <span class="icon"><img src="images/icon2.png"/></span>
+		      <span class="tab-label">供应</span>
+		    </a>
+		    <a class="tab-item" href="#">
+		      <span class="icon"><img src="images/icon3.png"/></span>
+		      <span class="tab-label">需求</span>
+		    </a>
+		    <a class="tab-item" href="#">
+		      <span class="icon"><img src="images/icon4.png"/></span>
+		      <span class="tab-label">我的</span>
+		    </a>
+		  </nav>
+
+		  <div class="content">
+			  <!-- Slider -->
+			  <div class="swiper-container" data-space-between='10'>
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"><img src="images/banner.jpg" alt=""></div>
+			      <div class="swiper-slide"><img src="images/banner.jpg" alt=""></div>
+			      <div class="swiper-slide"><img src="images/banner.jpg" alt=""></div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			  </div>
+			  <div class="bg-blue ind-wen">
+				  千百度信息网：工业需求信息免费发布的共享平台。集聚工业生产、业务、技术、服务等配套方方面面需求的信息，为广大实体从业者带来快捷与便利！    ------见您所寻、为您所用、共赢共享，唯有千百度！
+			  </div>
+			  <div class="content-padded ind-nav">
+			    <div class="row">
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a><a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a><a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+					<a class="tab-item col-25" href="#">
+				      <span class="icon"><img src="images/icon-nav.png"/></span>
+				      <span class="tab-label">我的</span>
+				    </a>
+			    </div>
+			</div>
+			<div class="bg-blue box ind-select">
+				<label for="">区域</label>
+				<input type="text" id='city-picker' placeholder="请选择区域"/>
+			</div>
+			<div class="bg-blue box ind-way">
+				<div class="row">
+					<select class="col-33">
+					  <option>供求类型</option>
+					  <option>需求</option>
+					</select>
+					<select class="col-33">
+					  <option>收费模式</option>
+					  <option>需求</option>
+					</select>
+					<select class="col-33">
+					  <option>信息来源</option>
+					  <option>需求</option>
+					</select>
+				</div>
+			</div>
+			<div class="box">
+				<div class="list-block media-list">
+			      <ul>
+					  <li>
+  			          <a class="item-content">
+  			            <div class="item-media"><img src="images/pic.jpg" style='width: 3rem;'></div>
+  			            <div class="item-inner">
+  			              <div class="item-title-row">
+  			                <div class="item-title">
+  								<i class="icon-1">求</i>
+  								<i class="icon-2">企</i>
+  								<i class="icon-3">供</i>
+  								<i class="icon-4">实</i>
+  								集美地区厂房出租集美地区厂房出租集美地区厂房出租集美地区厂房
+  							</div>
+  			              </div>
+  			              <div class="item-subtitle">浏览:50次&nbsp;&nbsp;已约:40人&nbsp;&nbsp;好评:80%&nbsp;&nbsp;时间:08.09</div>
+  						  <div class="item-subtitle"><i class="icon-q">企业</i><i class="icon-q">官方认证</i><span class="pull-right">&nbsp;&nbsp;&nbsp;&nbsp;查看详细>></span><span class="pull-right">厦门集美</span></div>
+  			            </div>
+  					</a>
+  			        </li>
+					<li>
+			          <a class="item-content">
+			            <div class="item-media"><img src="images/pic.jpg" style='width: 3rem;'></div>
+			            <div class="item-inner">
+			              <div class="item-title-row">
+			                <div class="item-title">
+								<i class="icon-1">求</i>
+								<i class="icon-2">企</i>
+								<i class="icon-3">供</i>
+								<i class="icon-4">实</i>
+								集美地区厂房出租集美地区厂房出租集美地区厂房出租集美地区厂房
+							</div>
+			              </div>
+			              <div class="item-subtitle">浏览:50次&nbsp;&nbsp;已约:40人&nbsp;&nbsp;好评:80%&nbsp;&nbsp;时间:08.09</div>
+						  <div class="item-subtitle"><i class="icon-q">企业</i><i class="icon-q">官方认证</i><span class="pull-right">&nbsp;&nbsp;&nbsp;&nbsp;查看详细>></span><span class="pull-right">厦门集美</span></div>
+			            </div>
+					</a>
+			        </li>
+			      </ul>
+			    </div>
+			</div>
+		</div>
 
 
-<div id="sk-root" style="height:100%;width:100%;overflow:hidden">
-  <div data-reactroot="" class="container container-fill container-column" id="sk-container">
-    <div class="views">
 
     </div>
-	<nav class="tabbar tabbar-primary">
-		<span icon="home" title="首页" class="active tabbar-item"><span class="icon icon-home"></span><span class="tabbar-label">首页</span></span>
-		<span icon="pages" title="供应" class="tabbar-item"><span class="icon icon-pages"></span><span class="tabbar-label">供应</span></span>
-		<span icon="star" title="需求" class="tabbar-item"><span class="icon icon-star"></span><span class="tabbar-label">需求</span></span>
-		<span icon="person" title="我的" class="tabbar-item"><span class="icon icon-person"></span><span class="tabbar-label">我的</span></span>
-	</nav>
-  </div>
-</div>
 
-</body>
-<script src="assets/js/jquery-1.8.3.min.js"></script>
-<script src="assets/js/react-with-addons.min.js"></script>
-<script src="assets/js/amazeui.touch.min.js"></script>
+    <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+	<script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
+	<script type="text/javascript" src="js/sm-city-picker.min.js" charset="utf-8"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		$(".swiper-container").swiper();
+	});
+	</script>
+	<script>
+	  $("#city-picker").cityPicker({
+	    toolbarTemplate: '<header class="bar bar-nav">\
+	    <button class="button button-link pull-right close-picker">确定</button>\
+	    <h1 class="title">选择区域</h1>\
+	    </header>'
+	  });
+	</script>
+  </body>
 </html>
