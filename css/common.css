@@ -1,6 +1,6 @@
 body{font-size: .7rem; background: #fff}
 a,button,input,textarea,select{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
-select,input{background-color:transparent; border-color:transparent;}
+select,input{background-color:transparent; border-color:transparent;appearance:none;-moz-appearance:none;?/*?Firefox?*/-webkit-appearance:none;?/*?Safari?和?Chrome?*/}
 .page{background: #fff}
 .box{padding: 0.5rem}
 .w-pic{width: 100%}
@@ -38,3 +38,50 @@ select,input{background-color:transparent; border-color:transparent;}
 .list-block{margin: .3rem}
 .bar .searchbar{display: inline-block; width: 90%}
 .list-block.media-list .item-inner{padding-right: 0}
+
+.select-bg{
+    display:block;
+    width:200px;
+    margin:0 auto;
+    height: 30px;
+    line-height: 37px;
+    font-size: 13px;
+    border:1px #0f7fc7 solid ;
+    box-sizing:border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.select-bg:after{
+    content:' ';
+    position: absolute;
+    right:6px;
+    top:50%;
+    margin-top:-5px;
+    width:0px;
+      height:0px;
+      border-left:10px solid transparent;
+      border-right:10px solid transparent;
+      border-top:10px solid #0f7fc7;
+    font-size:0px;
+    line-height:0px
+}
+
+.select-green {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    outline: none;
+    border: 0 none;
+    position: relative;
+    padding: 0 0 0 5px;
+    width: 100%;
+    color:#0f7fc7;
+    font-weight: bold;
+    background: none;
+    background-color: transparent;
+    font-size: 13px;
+    z-index: 99;
+    overflow: hidden;
+}
