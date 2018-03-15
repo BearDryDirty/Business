@@ -4146,12 +4146,13 @@ body.panel-closing .page {
   width: 5rem;
 }
 @font-face {
-  font-family: "iconfont-sm";
-  src: url('../fonts/ratchicons.woff') format('woff'), /* chrome、firefox */ url('../fonts/ratchicons.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../fonts/ratchicons.svg#iconfont') format('svg');
-  /* iOS 4.1- */
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
 }
+
 .icon {
-  font-family: "iconfont-sm" !important;
+  font-family: "Glyphicons Halflings" !important;
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
