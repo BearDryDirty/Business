@@ -1,10 +1,16 @@
 body{font-size: .7rem; background: #fff}
-a,button,input,textarea,select{-webkit-tap-highlight-color: rgba(0,0,0,0;)}
-select,input{background-color:transparent; border-color:transparent;appearance:none;-moz-appearance:none;?/*?Firefox?*/-webkit-appearance:none;?/*?Safari?和?Chrome?*/}
+a,button,input,textarea,select{-webkit-tap-highlight-color: rgba(0,0,0,0;);font-size:.7rem !important; padding-left: 0 !important}
+select,input{background-color:transparent; border-color:transparent;appearance:none;-moz-appearance:none;?/*?Firefox?*/-webkit-appearance:none;?/*?Safari?å’Œ?Chrome?*/}
 .page{background: #fff}
 .box{padding: 0.5rem}
 .w-pic{width: 100%}
 .bg-blue{background: #2a82e4}
+.bg-grey{background: #e7e7e7}
+.bg-dark-grey{background: #999}
+.bg-orange{background: #e79b2d}
+.bg-red{background: #d43131}
+.c-orange{color: #e79b2d}
+.c-blue{color: #2a82e4}
 .hidden{overflow: hidden;}
 .bar-nav .earth{width: 30px}
 .bar-nav .button-primary{background: none}
@@ -19,9 +25,9 @@ select,input{background-color:transparent; border-color:transparent;appearance:n
 .ind-nav a {margin-bottom: 2%; color:#2a82e4}
 .ind-nav a img{width: 32px; vertical-align: middle; margin-bottom: 2%}
 .ind-nav a .tab-label{width: 100%; text-align: center; display: inline-block; color:#2a82e4}
-#city-picker{background: none; color: #fff; border: none; float: right; margin-right: 4%; display: inline-block; height: 20px}
+#city-picker{background: none; color: #fff; border: none; float: right; margin-right: 4%; display: inline-block; height: 24px; line-height: 24px}
 #city-picker::-webkit-input-placeholder{color: #fff}
-.ind-select{line-height: 20px; overflow: hidden; color: #fff}
+.ind-select{line-height: 24px; overflow: hidden; color: #fff}
 .ind-way{border-top: 1px solid #fff}
 .ind-way select{color: #fff; text-align: center;}
 .ind-way select option{text-align: center;}
@@ -89,8 +95,7 @@ select,input{background-color:transparent; border-color:transparent;appearance:n
 }
 .ind-way .select-bg:nth-of-type(3){border: none}
 
-.c-orange{color: #e79b2d}
-.c-blue{color: #2a82e4}
+
 .user-top{padding: .7rem 0; text-align: center; color: #fff}
 .user-top img{width: 60px; height: 60px; border-radius: 60px}
 .user-top label{width: 100%; display: inline-block;}
@@ -100,6 +105,23 @@ select,input{background-color:transparent; border-color:transparent;appearance:n
 .user-list{margin: .5rem 0;}
 .user-list a{background: #e7e7e7 ; margin-bottom: .1rem}
 .user-list a .item-media{margin-left: .3rem}
+
+.show-wen{padding: .5rem; font-size: .7rem}
+.show-list .row div{margin-bottom: .3rem ; margin-top: .3rem;border-bottom: 1px solid #999;}
+.show-nav-chk{padding: .5rem 0; text-align: center;}
+.show-info .row div{height: 44px; line-height: 40px; text-align: center;}
+.show-pl{margin: .3rem 0}
+.show-mes li .item-title img{width: 20px; height: 20px; border-radius: 26px; display: block; float: left; margin-right: .5rem}
+.show-mes li .item-text{height: auto}
+.show-mes .item-inner{background-image: none !important}
+
+
+
+
+
+
+
+
 
 
 
