@@ -1,6 +1,7 @@
 body{font-size: .7rem; background: #fff}
 a,button,input,textarea,select{-webkit-tap-highlight-color: rgba(0,0,0,0;);font-size:.7rem !important; padding-left: 0 !important}
 select,input{background-color:transparent; border-color:transparent;appearance:none;-moz-appearance:none;?/*?Firefox?*/-webkit-appearance:none;?/*?Safari?å’Œ?Chrome?*/}
+i{font-style: normal;}
 .page{background: #fff}
 .box{padding: 0.5rem}
 .w-pic{width: 100%}
@@ -11,6 +12,7 @@ select,input{background-color:transparent; border-color:transparent;appearance:n
 .bg-red{background: #d43131}
 .c-orange{color: #e79b2d}
 .c-blue{color: #2a82e4}
+.c-red{color: #d43131 !important}
 .hidden{overflow: hidden;}
 .bar-nav .earth{width: 30px}
 .bar-nav .button-primary{background: none}
@@ -115,15 +117,15 @@ select,input{background-color:transparent; border-color:transparent;appearance:n
 .show-mes li .item-text{height: auto}
 .show-mes .item-inner{background-image: none !important}
 
+.shop-list .label-checkbox{margin-right: .3rem}
+.chkbox{width: 28px; height: 20px; margin-right: 5px; border-radius: 20px; display: block; padding: 0}
+.chkbox[type=checkbox]{ -webkit-appearance: none; border: 1px solid #eee; background-size:contain}
+.chkbox[type="checkbox"]:checked { background:#0f7fc7 url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E") no-repeat center center; background-size:contain; text-align: center; line-height: 20px;background-size: 0.6rem 0.45rem;}
 
-
-
-
-
-
-
-
-
+.trade-tit,.trade-total{height: 40px; padding: 0 .8rem; line-height: 40px}
+.trade-tit i{float: right;}
+.trade .box{padding:0 .5rem}
+.trade-total{text-align: right; margin-bottom: .5rem}
 
 .glyphicon-asterisk:before {
   content: "\002a";
