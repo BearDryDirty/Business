@@ -13,6 +13,7 @@ i{font-style: normal;}
 .c-orange{color: #e79b2d}
 .c-blue{color: #2a82e4}
 .c-red{color: #d43131 !important}
+.list-bg-block{padding: .3rem}
 .hidden{overflow: hidden;}
 .bar-nav .earth{width: 30px}
 .bar-nav .button-primary{background: none}
@@ -34,11 +35,10 @@ i{font-style: normal;}
 .ind-way select{color: #fff; text-align: center;}
 .ind-way select option{text-align: center;}
 .ind-list{margin-bottom: .5rem}
-.list-block i{font-style: normal; padding: 1px 3px}
-.icon-1{color: #fff; font-size: .4rem; background: #43cf7c}
-.icon-2{color: #fff; font-size: .4rem; background: #2b81e4}
-.icon-3{color: #fff; font-size: .4rem; background: #d43131}
-.icon-4{color: #fff; font-size: .4rem; background: #fe5734}
+.icon-1{color: #fff; font-size: .4rem; background: #43cf7c;font-style: normal; padding: 1px 3px}
+.icon-2{color: #fff; font-size: .4rem; background: #2b81e4;font-style: normal; padding: 1px 3px}
+.icon-3{color: #fff; font-size: .4rem; background: #d43131;font-style: normal; padding: 1px 3px}
+.icon-4{color: #fff; font-size: .4rem; background: #fe5734;font-style: normal; padding: 1px 3px}
 .icon-q{color: #d73736; font-size: .4rem; border:1px solid #d73736; border-radius: 20px; margin-right: 5px; display: inline}
 .list-block .item-subtitle{color: #999; font-size: .5rem; margin-top: 5px}
 .list-block .item-title{color: #000;font-size: .7rem}
@@ -126,6 +126,26 @@ i{font-style: normal;}
 .trade-tit i{float: right;}
 .trade .box{padding:0 .5rem}
 .trade-total{text-align: right; margin-bottom: .5rem}
+
+.authen-top{text-align: center; padding: .7rem 0}
+.authen-top a{ width: 50%; margin: .7rem auto 0 auto}
+.authen-wen{margin-bottom: .3rem}
+.authen-wen small{color: #999}
+.authen{margin-bottom: .1rem}
+.authen-upload {padding: .3rem; overflow: hidden; margin-bottom: .2rem}
+.authen-upload .up-l{width: 68%; height: 80px; border:1px solid #ccc; float: left; position: relative; text-align: center; line-height: 80px; overflow: hidden;}
+.authen-upload .up-l input{position: absolute; z-index: 1 ; top: 0; right: 0; bottom: 0; left: 0; opacity: 0}
+.authen-upload .up-l img{height: 80px; margin: 0 auto;}
+.authen-upload .up-r{width: 30%; float: right; text-align: center; line-height: 28px; height: 80px; overflow: hidden;}
+.authen-upload .up-r img{width: 80px}
+.authen-bottom{padding: 1rem .3rem; margin-top: .3rem}
+.authen-bottom a{margin-top: .3rem}
+.authen-wen{line-height: 24px}
+
+
+
+
+
 
 .glyphicon-asterisk:before {
   content: "\002a";

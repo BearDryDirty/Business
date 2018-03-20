@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>实名认证</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/common.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+		<div class="page">
+            <div class="content">
+            <div class="bg-grey list-bg-block authen-top">
+                实名认证会显示<i class="icon-4">实</i>表识<br />获得更多展示机会，增加曝光几率
+                <a href="authen-show.html" class="button button-danger">查看实名认证说明</a>
+            </div>
+            <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">姓名</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="请输入中文姓名">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">身份证</div>
+                        <div class="item-input">
+                          <input type="email" placeholder="请输入正确的身份证号">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-grey list-bg-block authen-wen">
+                  请提供身份证明图片<br />
+                  <small>仅供千百度信息网认证使用，千百度信息网不会未经授权透露您的信息给第三方</small>
+              </div>
+              <div class="list-bg-block bg-grey authen">
+                  <div class="authen-upload">
+                      <div class="c-red up-l" id="img1">
+                          <i class="icon glyphicon glyphicon-plus"></i>
+                          上传身份证正面照
+                          <input type="file" id="file1">
+                      </div>
+                     <div class="up-r">
+                         示例样图
+                         <img src="images/authen1.png" />
+                     </div>
+                  </div>
+              </div>
+              <div class="list-bg-block bg-grey authen">
+                  <div class="authen-upload">
+                      <div class="c-red up-l" id="img2">
+                          <i class="icon glyphicon glyphicon-plus"></i>
+                          上传身份证反面照
+                          <input type="file" id="file2">
+                      </div>
+                     <div class="up-r">
+                         示例样图
+                         <img src="images/authen2.png" />
+                     </div>
+                  </div>
+              </div>
+              <div class="list-bg-block bg-grey authen">
+                  <div class="authen-upload">
+                      <div class="c-red up-l" id="img3">
+                          <i class="icon glyphicon glyphicon-plus"></i>
+                          上传手持身份证照
+                          <input type="file" id="file3">
+                      </div>
+                     <div class="up-r">
+                         示例样图
+                         <img src="images/authen3.png" />
+                     </div>
+                  </div>
+              </div>
+              <div class="bg-grey authen-bottom">
+                  请确保以上信息真实准确
+                  <a href="#" class="button button-fill button-big button-success">确认提交</a>
+              </div>
+  		</div>
+
+
+</div>
+
+
+    </div>
+
+    <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type="text/javascript">
+    $("#file1").change(function(){
+        $("#img1").html("<img/>");
+        $("#img1 img").attr("src",URL.createObjectURL($(this)[0].files[0]))
+    });
+    $("#file2").change(function(){
+        $("#img2").html("<img/>");
+        $("#img2 img").attr("src",URL.createObjectURL($(this)[0].files[0]))
+    });
+    $("#file3").change(function(){
+        $("#img3").html("<img/>");
+        $("#img3 img").attr("src",URL.createObjectURL($(this)[0].files[0]))
+    });
+    </script>
+  </body>
+</html>

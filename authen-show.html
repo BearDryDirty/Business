@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>认证须知</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/common.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+		<div class="page">
+            <div class="content">
+            <div class="authen-wen content-padded">
+                审核须知：<br>
+                实名认证现只支持APP端提交资料，请选择网络安全环境提交认证信息<br>
+                1.我们保证您提交的信息将被予以保护，不挪作他用<br>
+                2.个人实名请上传手持身份证正面半身照、身份证正面照、身份证反面照三张图片<br>
+                3.身份证正面照片和反面照片必须为同一证件<br>
+                4.人物图像与身份证图像保持一致，人物要求露脸并保持五官清晰<br>
+                5.证件内容要求文字完整清晰可辨无遮挡<br>
+                6.请上传真实有效的证件照片，有效期至少保持一个月<br>
+                7.审核通过后不支持修改证件，请确认无误后提交审核<br>
+                8.临时身份证、第一代身份证、过期身份证将无法通过审核<br><br>
+            </div>
+            <div class="authen-wen content-padded">
+                <a href="#" class="button button-fill button-big">知道了，去认证</a>
+            </div>
+
+</div>
+
+  		</div>
+
+
+</div>
+
+
+    </div>
+
+    <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type="text/javascript">
+    $("#file1").change(function(){
+        $("#img1").html("<img/>");
+        $("#img1 img").attr("src",URL.createObjectURL($(this)[0].files[0]))
+    });
+    $("#file2").change(function(){
+        $("#img2").html("<img/>");
+        $("#img2 img").attr("src",URL.createObjectURL($(this)[0].files[0]))
+    });
+    </script>
+  </body>
+</html>
