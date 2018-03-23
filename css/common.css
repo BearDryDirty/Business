@@ -30,7 +30,7 @@ i{font-style: normal;}
 .ind-nav a img{width: 32px; vertical-align: middle; margin-bottom: 2%}
 .ind-nav a .tab-label{width: 100%; text-align: center; display: inline-block; color:#2a82e4}
 .nomane-nav a{margin-bottom: 2%; color:#2a82e4; text-align: center;}
-.nomane-nav a img{width: 40px; vertical-align: middle; margin-bottom: 2%; margin: 0 auto}
+.nomane-nav a img{width: 50px; vertical-align: middle; margin-bottom: 2%; margin: 0 auto}
 .nomane-nav a .tab-label{width: 100%; text-align: center; display: inline-block; color:#2a82e4; font-size: .5rem;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;}
 .ind-select #city-picker{background: none; color: #fff; border: none; float: right; margin-right: 4%; display: inline-block; height: 24px; line-height: 24px}
 .ind-select #city-picker::-webkit-input-placeholder{color: #fff}
@@ -50,7 +50,7 @@ i{font-style: normal;}
 .list-block{margin: .3rem}
 .bar .searchbar{display: inline-block; width: 90%}
 .list-block.media-list .item-inner{padding-right: 0}
-.icon-round{width: 40px !important; height: 40px; background:#2a82e4; border-radius: 40px; display: block ; margin: 0 auto; text-align: center; color: #fff; line-height: 40px; font-size: 16px}
+.icon-round{width: 50px !important; height: 50px; background:#2a82e4; border-radius: 50px; display: block ; margin: 0 auto; text-align: center; color: #fff; line-height: 50px; font-size: 20px}
 .button{font-size: .5rem}
 
 .select-bg{display:block;width:32.22222%;margin:0 auto;height:30px;line-height:37px;font-size:13px;border-right:1px #fff solid;box-sizing:border-box;cursor:pointer;position:relative;display:inline-flex;line-height:30px;text-align:center}
