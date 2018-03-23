@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="css/sm.css">
+<link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+<div class="page-group">
+<div class="page">
+    <div class="content">
+        <div class="classify-l">
+            <span>厂房</span>
+            <span>设备</span>
+            <span>人才</span>
+            <span>订单</span>
+            <span>采购</span>
+            <span>工程</span>
+            <span>服务</span>
+            <span>项目</span>
+            <span>运输</span>
+            <span>商城</span>
+            <span>生活</span>
+            <span>工业集中区</span>
+        </div>
+        <div class="right-wrap">
+            <div class="classify-r none">
+                <p></p>
+                <a href="">租厂房</a>
+                <a href="">租厂房</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">设备</a>
+                <a href="">设备</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">人才</a>
+                <a href="">人才</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">订单</a>
+                <a href="">订单</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">采购</a>
+                <a href="">采购</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">工程</a>
+                <a href="">工程</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">服务</a>
+                <a href="">服务</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">项目</a>
+                <a href="">项目</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">运输</a>
+                <a href="">运输</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">商城</a>
+                <a href="">商城</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">生活</a>
+                <a href="">生活</a>
+            </div>
+            <div class="classify-r none">
+                <p></p>
+                <a href="">工业集中区</a>
+                <a href="">工业集中区</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+<script type="text/javascript">
+    $(function(){
+        $(".classify-l span").eq(0).addClass("on");
+        var first = $(".classify-l span").eq(0).text();
+        $(".right-wrap .classify-r").eq(0).find("p").text(first);
+        $(".right-wrap .classify-r").eq(0).removeClass("none");
+    })
+    $(".classify-l span").click(function(){
+        var _ind = $(this).index();
+        var tit = $(this).text();
+        $(".classify-l span").removeClass("on");
+        $(this).addClass("on");
+        $(".right-wrap .classify-r").addClass("none")
+        $(".right-wrap .classify-r").eq(_ind).find("p").text(tit);
+        $(".right-wrap .classify-r").eq(_ind).removeClass("none")
+    })
+</script>
+</body>
+</html>

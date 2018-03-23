@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>积分明细</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/common.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+		<div class="page">
+		  <div class="content">
+            <div class="box bg-grey">
+                <p class="t-center">您目前有<i class="c-red">100</i>积分</p>
+                <p class="info-btn t-center">
+                    <a href="#" class="button button-fill button-warning">积分充值</a>
+                    <a href="#" class="button button-fill button-success">积分兑换</a>
+                    <a href="#" class="button button-fill">推荐好友</a>
+                </p>
+            </div>
+            <div class="box">
+                积分可用于信息置顶和增加信息发布数量。建议使用支付宝进行在线充值，如果没有支付宝，可以使用微信支付，官方微信号：123456789（备注产品）
+            </div>
+
+            <div class="jf-box">
+                <p class="jf-tit">
+                    <span>说明</span>
+                    <span>时间</span>
+                    <span>积分</span>
+                </p>
+                <p>
+                    <span>注册用户</span>
+                    <span>08-15</span>
+                    <span>100</span>
+                </p>
+                <p>
+                    <span>注册用户</span>
+                    <span>08-15</span>
+                    <span>100</span>
+                </p>
+                <p>
+                    <span>注册用户</span>
+                    <span>08-15</span>
+                    <span>100</span>
+                </p>
+                <p>
+                    <span>注册用户</span>
+                    <span>08-15</span>
+                    <span>100</span>
+                </p>
+            </div>
+
+		  </div>
+
+    </div>
+    </div>
+
+    <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script type="text/javascript">
+        function del(obj){
+            $(obj).parent().parent().remove()
+        }
+    </script>
+  </body>
+</html>
