@@ -20,6 +20,7 @@
 
 		  <nav class="bar bar-tab bg-blue">
 		    <a class="tab-item bg-blue" href="javascript:void(0)">
+                <label class="sel-all" for="chk"><input type="checkbox" class="chkbox" id="chk"> 全选</label>
 		      <span class="tab-label">合计：¥<i class="total">0</i></span>
 		    </a>
 		    <a class="tab-item bg-red" href="supply.html">
@@ -33,7 +34,7 @@
 			      <ul>
                       <li>
       			          <div class="item-content">
-                                <input type="checkbox" name="myChk" class="chkbox">
+                            <input type="checkbox" name="myChk" class="chkbox">
       			            <div class="item-media"><img src="images/pic.jpg" style='width: 3rem;'></div>
       			            <div class="item-inner">
       			              <div class="item-title-row">
@@ -85,17 +86,30 @@
         $(".chkbox").click(function(){
             total()
         })
-
+        $("#chk").click(function(){
+            $(".shop-list li").each(function(){
+                $(this).find("input").prop("checked","checked")
+            })
+            total()
+        })
         function total(){
             var total = 0;
             var price = 0;
+            var len = $(".shop-list li").length;
+            var num = 0;
             $(".shop-list li").each(function(){
                 if ($(this).find("input").is(":checked")) {
                     var price =$(this).parent().parent().find(".price").text();
-                    total = parseInt(total)+parseInt(price)
+                    total = parseInt(total)+parseInt(price);
+                    num++
                 }
-            })
-            $(".total").text(total)
+            });
+            $(".total").text(total);
+            if(num == len){
+                $("#chk").prop("checked","checked")
+            }else{
+                $("#chk").prop("checked","")
+            }
         }
 
         $(".del-btn").click(function(){

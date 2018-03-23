@@ -43,7 +43,7 @@ i{font-style: normal;}
 .icon-2{color: #fff; font-size: .4rem; background: #2b81e4;font-style: normal; padding: 1px 3px}
 .icon-3{color: #fff; font-size: .4rem; background: #d43131;font-style: normal; padding: 1px 3px}
 .icon-4{color: #fff; font-size: .4rem; background: #fe5734;font-style: normal; padding: 1px 3px}
-.icon-q{color: #d73736; font-size: .4rem; border:1px solid #d73736; border-radius: 20px; margin-right: 5px; display: inline}
+.icon-q{color: #d73736; font-size: .4rem; border:1px solid #d73736; border-radius: 20px; margin-right: 5px; display: inline; padding: 0 4px}
 .list-block .item-subtitle{color: #999; font-size: .5rem; margin-top: 5px}
 .list-block .item-title{color: #000;font-size: .7rem}
 .list-block .item-content{padding-left: 0}
@@ -51,6 +51,7 @@ i{font-style: normal;}
 .bar .searchbar{display: inline-block; width: 90%}
 .list-block.media-list .item-inner{padding-right: 0}
 .icon-round{width: 40px !important; height: 40px; background:#2a82e4; border-radius: 40px; display: block ; margin: 0 auto; text-align: center; color: #fff; line-height: 40px; font-size: 16px}
+.button{font-size: .5rem}
 
 .select-bg{display:block;width:32.22222%;margin:0 auto;height:30px;line-height:37px;font-size:13px;border-right:1px #fff solid;box-sizing:border-box;cursor:pointer;position:relative;display:inline-flex;line-height:30px;text-align:center}
 .select-bg:after{content:' ';position:absolute;right:6px;top:50%;margin-top:-3px;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid #fff;font-size:0;line-height:0}
@@ -80,7 +81,7 @@ i{font-style: normal;}
 .shop-list .label-checkbox{margin-right: .3rem}
 .chkbox{width: 28px; height: 20px; margin-right: 5px; border-radius: 20px; display: block; padding: 0}
 .chkbox[type=checkbox]{ -webkit-appearance: none; border: 1px solid #eee; background-size:contain}
-.chkbox[type="checkbox"]:checked { background:#0f7fc7 url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E") no-repeat center center; background-size:contain; text-align: center; line-height: 20px;background-size: 0.6rem 0.45rem;}
+.chkbox[type="checkbox"]:checked { background:#2a82e4 url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E") no-repeat center center; background-size:contain; text-align: center; line-height: 20px;background-size: 0.6rem 0.45rem;}
 
 .trade-tit,.trade-total{height: 40px; padding: 0 .8rem; line-height: 40px}
 .trade-tit i{float: right;}
@@ -123,6 +124,8 @@ i{font-style: normal;}
 .company-box{margin: .5rem; background: #fff; padding: .5rem}
 .company-box .company-pic{max-width: 100%; width:100%; margin: 0 auto;}
 .company-box h3{color: #d73736; border-bottom: 1px solid #e7e7e7}
+.sel-all{color: #fff; display: inline-flex; margin-left: .3rem; float: left;}
+.sel-all input{width: 20px}
 
 
 .glyphicon-asterisk:before{content:"\002a"}
