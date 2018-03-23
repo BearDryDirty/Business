@@ -22,8 +22,11 @@
                 <p class="info-btn t-center">
                     <a href="#" class="button button-fill button-warning">积分充值</a>
                     <a href="#" class="button button-fill button-success">积分兑换</a>
-                    <a href="#" class="button button-fill">推荐好友</a>
+                    <a href="javascript:void(0)" onclick="showQr()" class="button button-fill">推荐好友</a>
                 </p>
+            </div>
+            <div class="cover none">
+                <div id="output"></div>
             </div>
             <div class="box">
                 积分可用于信息置顶和增加信息发布数量。建议使用支付宝进行在线充值，如果没有支付宝，可以使用微信支付，官方微信号：123456789（备注产品）
@@ -63,11 +66,21 @@
     </div>
 
     <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
     <script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+    <script>
+    jQuery(function(){
+    	jQuery('#output').qrcode("二维码内容");
+    })
+    </script>
     <script type="text/javascript">
-        function del(obj){
-            $(obj).parent().parent().remove()
+        function showQr(){
+            $(".cover").show()
         }
+        $(".cover").click(function(){
+            $(this).hide()
+        })
     </script>
   </body>
 </html>

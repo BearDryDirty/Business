@@ -126,7 +126,15 @@ i{font-style: normal;}
 .company-box h3{color: #d73736; border-bottom: 1px solid #e7e7e7}
 .sel-all{color: #fff; display: inline-flex; margin-left: .3rem; float: left;}
 .sel-all input{width: 20px}
-
+.verify{position: relative;}
+.verify button{position: absolute; right: 0; top: .4rem ;bottom: 0; padding: 0 .3rem!important}
+.cover{position: fixed; top: 0; right: 0; bottom: 0;left: 0; background: rgba(255,255,255,.9)}
+.cover canvas{position:absolute; top: 50%; left: 50%; margin: -128px 0 0 -128px}
+.upload-pic{padding:.4rem 0 ; margin: 0; text-align:justify;text-align-last:justify;line-height:0;}
+.upload-pic span{width: 12%; height: auto; display: inline-block;
+; position: relative;}
+.upload-pic span input{position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: 0;filter:alpha(opacity=0)}
+.upload-pic img{width: 100%; height: auto; margin: auto; max-height: 40px;}
 
 .glyphicon-asterisk:before{content:"\002a"}
 .glyphicon-plus:before{content:"\002b"}

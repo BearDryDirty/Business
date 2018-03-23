@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>添加需求信息</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="css/sm.css">
+<link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+<div class="page-group">
+<div class="page">
+    <div class="content information-list">
+        <div class="list-block">
+        <ul>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>选择分类</div>
+                  <div class="item-input">
+                    <select>
+                      <option>厂房</option>
+                      <option>宿舍</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>展示时间</div>
+                  <div class="item-input">
+                    <select>
+                      <option>1个月</option>
+                      <option>2个月</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>信息来源</div>
+                  <div class="item-input">
+                    <select>
+                      <option>自营</option>
+                      <option>第三方</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>收费模式</div>
+                  <div class="item-input">
+                    <select>
+                      <option>付费</option>
+                      <option>抵扣</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">实拍图片</div>
+                </div>
+              </div>
+              <!-- <a href="javascript:void(0)" onclick="upload()" class="button"><span class="icon glyphicon glyphicon-plus"></span>&nbsp;添加图片</a> -->
+              <p class="upload-pic">
+                  <span id="img1">
+                      <input type="file" id="file1">
+                      <img src="images/upload.png">
+                  </span>
+                  <span id="img2">
+                      <input type="file" id="file2">
+                      <img src="images/upload.png">
+                  </span>
+                  <span id="img3">
+                      <input type="file" id="file3">
+                      <img src="images/upload.png">
+                  </span>
+                  <span id="img4">
+                      <input type="file" id="file4">
+                      <img src="images/upload.png">
+                  </span>
+                  <span id="img5">
+                      <input type="file" id="file5">
+                      <img src="images/upload.png">
+                  </span>
+                  <span id="img6">
+                      <input type="file" id="file6">
+                      <img src="images/upload.png">
+                  </span>
+              </p>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>信息主题</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="不超过30个字">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">地区</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="如厦门集美">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">信息来源</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="如厂房房东">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">建筑结构</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="如标准工业厂房">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">院落面积</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入院落面积">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">建筑面积</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入建筑面积">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">适用行业</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="如电子、注塑">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">楼层</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入楼层">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">高度</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="输入高度">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">用电量</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入用电量">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">租金</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入租金金额">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">电梯</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="如货梯2T">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">地区</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="不超过30个字">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>信息内容</div>
+                  <div class="item-input">
+                      <textarea></textarea>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>展示价格</div>
+                  <div class="item-input">
+                    <input type="number" placeholder="只能输入数字">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>联系人</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入联系人">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>手机号码</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入手机号码">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">QQ</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入QQ">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">微信</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入微信">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">邮箱</div>
+                  <div class="item-input">
+                    <input type="text" placeholder="请输入邮箱">
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+        <p>
+        <button type="submit" class="button button-fill button-big" style="width:100%">提交</button>
+        </p>
+    </div>
+    </div>
+</div>
+</div>
+
+<script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/sm.js' charset='utf-8'></script>
+<script type="text/javascript">
+    $(".upload-pic input[type=file]").change(function(){
+        console.log($(this).parent().html());
+        $(this).parent().find("img").attr("src",URL.createObjectURL($(this)[0].files[0]))
+    });
+</script>
+</body>
+</html>

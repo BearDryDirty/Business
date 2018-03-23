@@ -94,6 +94,17 @@
             <li>
               <div class="item-content">
                 <div class="item-inner">
+                  <div class="item-title label"><i class="c-red">*</i>验证码</div>
+                  <div class="item-input verify">
+                    <input type="tel" placeholder="请输入验证码">
+                    <button type="button" id="btn" onclick="sendverify()" class="button">获取验证码</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
                   <div class="item-title label">固定电话</div>
                   <div class="item-input">
                     <input type="text" placeholder="请输入固定电话">
@@ -151,6 +162,30 @@
 	    <h1 class="title">选择区域</h1>\
 	    </header>'
 	  });
+
+      var countdown=60;
+      function sendverify(){
+          var obj = $("#btn");
+          settime(obj);
+          }
+      function settime(obj) { //发送验证码倒计时
+          if (countdown == 0) {
+              obj.attr('disabled',false);
+              //obj.removeattr("disabled");
+              obj.text("获取验证码");
+              obj.removeClass("disabled");
+              countdown = 60;
+              return;
+          } else {
+              obj.attr('disabled',true);
+              obj.text("重新发送(" + countdown + ")");
+              countdown--;
+              obj.addClass("disabled");
+          }
+      setTimeout(function() {
+          settime(obj) }
+          ,1000)
+      }
 	</script>
   </body>
 </html>
