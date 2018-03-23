@@ -103,7 +103,7 @@ i{font-style: normal;}
 .authen-bottom a{margin-top: .3rem}
 .authen-wen{line-height: 24px}
 .info-btn{text-align: right; padding: .3rem 0; border-top: 1px solid #e7e7e7}
-.info-btn a{width: auto ; display: inline-block; padding: 0 .5rem !important; margin: 0 0 0 .3rem; text-align: center;}
+.info-btn a{width: auto ; display: inline-block; padding: 0 .5rem !important; margin: 0 0 0 .3rem; text-align: center; font-size: .5rem}
 .info-list li{border-bottom: 4px solid #e7e7e7}
 .information-list li{border-bottom: 1px solid #e7e7e7}
 .t-center{text-align: center;}
