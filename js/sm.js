@@ -3266,7 +3266,7 @@ Device/OS Detection
 
         me.extend = function(target, obj) {
             for (var i in obj) {  // jshint ignore:line
-                    target[i] = obj[i]; 
+                    target[i] = obj[i];
             }
         };
 
@@ -3513,7 +3513,7 @@ Device/OS Detection
 
             snapThreshold: 0.334,
 
-            // INSERT POINT: OPTIONS 
+            // INSERT POINT: OPTIONS
 
             startX: 0,
             startY: 0,
@@ -3579,7 +3579,7 @@ Device/OS Detection
 
         // INSERT POINT: NORMALIZATION
 
-        // Some defaults    
+        // Some defaults
         this.x = 0;
         this.y = 0;
         this.directionX = 0;
@@ -7572,9 +7572,9 @@ Device/OS Detection
         // 如果 panel 的 effect 是 reveal 时,似乎是 page 的动画或别的样式原因导致了 transitionEnd 时间不会触发
         // 这里暂且处理一下
         $('body').removeClass('panel-closing');
-        $.allowPanelOpen = true;  
+        $.allowPanelOpen = true;
     });
-   
+
     $(window).on('pageInit', function() {
         $.hideIndicator();
         $.lastPosition({
